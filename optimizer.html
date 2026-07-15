@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Athena Optimizer</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="dashboard">
+
+<h1>ATHENA AI</h1>
+
+<h2>DraftKings Optimizer</h2>
+
+<p>
+Upload today's DraftKings salary CSV to begin analysis.
+</p>
+
+<input
+type="file"
+id="csvFile"
+accept=".csv">
+
+<br><br>
+
+<button id="loadCSV">
+
+Load DraftKings CSV
+
+</button>
+
+<br><br>
+
+<h3 id="status">
+
+Waiting for DraftKings CSV...
+
+</h3>
+
+<hr>
+
+<div id="results">
+
+</div>
+
+<br>
+
+<a href="dashboard.html">
+
+← Back to Dashboard
+
+</a>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
+
+<script type="module" src="optimizer.js"></script>
+
+</body>
+
+</html>
